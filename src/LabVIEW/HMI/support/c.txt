@@ -1,0 +1,32 @@
+TL_Red
+TL_Orange
+TL_Green
+TL_Buzzer
+SOL_Index_Rotary_CW
+SOL_Index_CNVR_Rotary_CCW
+SOL_Index_CNVR_Stopper_Rear
+SOL_Index_CNVR_Output _Separator _Rear
+Bowl  Feeder_ ON
+Pump_CNVR_Motor _ON
+SOL_Gating_CYL_Rear
+SOL_Tube_Feed_Agitatator
+SOL_Tube_Feed_Gating_CYL
+SOL_Insertion _CYL
+SOL_Insertion_Clamp_CYL
+SOL_Cutting_CYL
+SOL_Cutting_Clamp_CYL
+SOL_Insertion_Air_Nozzle
+SOL_Measurement_CYL
+SOL_Measure_Clamp_CYL
+SOL_Rejection CYL_1
+SOL_Rejection CYL_2
+SOL_Rejection CYL_3
+SOL_Rejection CYL_4
+DO1.24
+DO1.25
+DO1.26
+DO1.27
+DO1.28
+DO1.29
+DO1.30
+DO1.31

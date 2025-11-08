@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{70932992-636D-400E-85BF-6C07CAD2D73E}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..30] OF UINT</Name>
+			<BitSize>496</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>31</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{85E5F182-994B-D58F-D73E-E06C3608A833}" Namespace="Tc2_ModbusRTU" AutoDeleteType="true">MB_PcComInData</Name>
+			<BitSize>528</BitSize>
+			<SubItem>
+				<Name>SerStatus</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>64</Elements>
+				</ArrayInfo>
+				<BitSize>512</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<Properties>
+				<Property>
+					<Name>hide</Name>
+				</Property>
+			</Properties>
+		</DataType>
+		<DataType>
+			<Name GUID="{817F87BD-54FA-7383-92CB-61C84BBDADE4}" Namespace="Tc2_ModbusRTU" AutoDeleteType="true">MB_PcComOutData</Name>
+			<BitSize>528</BitSize>
+			<SubItem>
+				<Name>SerCtrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>64</Elements>
+				</ArrayInfo>
+				<BitSize>512</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<Properties>
+				<Property>
+					<Name>hide</Name>
+				</Property>
+			</Properties>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000fffffffffffffffffff8f8f7e8e7e6b6b6b6c7c5c6e8e7e7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa0a492747668535252b7b4b4c0bdbe130c09888584ffffffffffffffffffffffffffffffffffffffffffffffffffffff26222166625f838484c3c1c2c6c2c42923202d2724191310656361ebebeaffffffffffffffffffffffffffffffffffff0200005a5856727879cbc7c8c9c5c62923213b35333e3835231e1c000000ffffffffffffffffffffffffffffffffffff000000575553626463cbc7c8c9c5c62923203b35333e3634302a27050200ffffffffffffffffffffffffffffffffffff9795959e9a989ba2a5cdcacac7c4c52a24213b35333c37332c2725020000ffffffffffffffffffffffffffffffffffff0704014d4a47aca9a8d5d4d4c8c5c62923203b35333c36332c2725030100fefcfcffffffffffffffffffffffffffffff0000003c3936111010d5d3d4c8c3c52923213a34313c35332c2725030000f9f7f7ffffffffffffffffffffffffffffff6865635b5956110e0acccacacecacb27211f3933313a35322b2624020000f4f3f3ffffffffffffffffffffffffffffffe9eaeadcdcdc8b8b8bcacbcad4d1d2251f1c3933323935322c2926010000efefeeffffffffffffffffffffffffffffff4f50517e7e7fcac5c57d7a7bd5d3d4231f1d3933303835322a2724020000e9e9e9ffffffffffffffffffffffffffffff5352501a19133f3e3a555755c8c8c92923203733303a36332b2825000000e6e6e5ffffffffffffffffffffffffffffffffffffffffffc7c3c47a72706e6564433b3a2c2725231f1c1715120a0603dddcdbffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeedc0bebc918a897e7775777472b9b6b4f2f2f1ffffffffffff</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{63991F64-E23B-4196-8623-BBCA69730326}" TargetNetId="5.137.183.254.1.1" ShowHideConfigurations="#x106">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project GUID="{2B1FBE49-E622-4373-B107-506DFC374B2E}" Name="Servo Drive" PrjFilePath="Servo Drive\Servo Drive.plcproj" TmcFilePath="Servo Drive\Servo Drive.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Servo Drive\Servo Drive.tmc">
+					<Name>Servo Drive Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>MAIN.ModBus_Output</Name>
+							<Type GUID="{70932992-636D-400E-85BF-6C07CAD2D73E}">ARRAY [0..30] OF UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Error_Code</Name>
+							<Comment><![CDATA[Motor PDOs]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Statusword</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Mode_Of_Operation_Display</Name>
+							<Type>SINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Position_Actual_Value</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Velocity_Actual_Value</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Torque_Actual_Value</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Touch_Porbe_Status</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Touch_Probe_Pos1_Pos_Value</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Digital_Inputs</Name>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.ModBus_Slave.InData</Name>
+							<Type GUID="{85E5F182-994B-D58F-D73E-E06C3608A833}" Namespace="Tc2_ModbusRTU">MB_PcComInData</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>MAIN.ModBus_Input</Name>
+							<Type GUID="{70932992-636D-400E-85BF-6C07CAD2D73E}">ARRAY [0..30] OF UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Controlword</Name>
+							<Comment><![CDATA[TPDO]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Mode_Of_Operation</Name>
+							<Type>SINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Target_Position</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Max_Torque</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Touch_Probe_Function</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.Panasonic.Target_Velocity</Name>
+							<Type>DINT</Type>
+						</Var>
+						<Var>
+							<Name>MAIN.ModBus_Slave.OutData</Name>
+							<Type GUID="{817F87BD-54FA-7383-92CB-61C84BBDADE4}" Namespace="Tc2_ModbusRTU">MB_PcComOutData</Type>
+						</Var>
+					</Vars>
+					<Contexts>
+						<Context>
+							<Id NeedCalleeCall="true">0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010030</OTCID>
+							</ManualConfig>
+							<Priority>20</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.137.183.254.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
+				<Name>Device 1 (EtherCAT)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>536870912</Address>
+						<Offset>65536</Offset>
+						<Size>16384</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099">
+					<Name>Term 3 (EK1200)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001b58" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-7000 EtherCAT Power supply (1,5A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
+					<Box Id="2" BoxType="9099">
+						<Name>Term 2 (EK1110)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04562c52" RevisionNo="#x00110000" PortPhys="19" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1110 EtherCAT extension" Desc="EK1110" PortABoxInfo="#x01000001"/>
+					</Box>
+				</Box>
+				<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Drive 5 (MDDLN55BE)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="15" VendorId="#x0000066f" ProductCode="#x60380009" RevisionNo="#x00010000" InfoDataAddr="true" InfoDataSoeDS401="true" EnableWdDivider0400="true" EnableWdTime0420="true" TimeoutMailbox2="10000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="MDDLN55BE" Desc="MDDLN55BE" PortABoxInfo="#x01000002">
+						<SyncMan>001000012600010001000000200000010001001026010000</SyncMan>
+						<SyncMan>001200012200010002000000280000010001001222010000</SyncMan>
+						<SyncMan>00140f006400010003000000000000000900001464010000</SyncMan>
+						<SyncMan>001619002000010004000000000000001700001620010000</SyncMan>
+						<Fmmu>0000000000000000001400020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<DcMode>4672656552554e0000000000000000004672656552554e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>4443000000000000000000000000000044432053594e4330000000000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="Transmit PDO mapping 1" Index="#x1a00" Flags="#x0000">
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Following error actual value" Index="#x60f4">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Digital inputs" Index="#x60fd">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Transmit PDO mapping 2" Index="#x1a01" Flags="#x0000">
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Digital inputs" Index="#x60fd">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Transmit PDO mapping 3" Index="#x1a02" Flags="#x0000" SyncMan="3">
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Digital inputs" Index="#x60fd">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Transmit PDO mapping 4" Index="#x1a03" Flags="#x0000">
+							<Entry Name="Error code" Index="#x603f">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Statusword" Index="#x6041">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation display" Index="#x6061">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Position actual value" Index="#x6064">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Velocity actual value" Index="#x606c">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Torque actual value" Index="#x6077">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Touch probe status" Index="#x60b9">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Touch probe pos1 pos value" Index="#x60ba">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Digital inputs" Index="#x60fd">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping 1" Index="#x1600" InOut="1" Flags="#x0000">
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping 2" Index="#x1601" InOut="1" Flags="#x0000">
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Target torque" Index="#x6071">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Max motor speed" Index="#x6080">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target velocity" Index="#x60ff">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping 3" Index="#x1602" InOut="1" Flags="#x0000" SyncMan="2">
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Max torque" Index="#x6072">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target velocity" Index="#x60ff">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Receive PDO mapping 4" Index="#x1603" InOut="1" Flags="#x0000">
+							<Entry Name="Controlword" Index="#x6040">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Modes of operation" Index="#x6060">
+								<Type>SINT</Type>
+							</Entry>
+							<Entry Name="Target torque" Index="#x6071">
+								<Type>INT</Type>
+							</Entry>
+							<Entry Name="Max torque" Index="#x6072">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target position" Index="#x607a">
+								<Type>DINT</Type>
+							</Entry>
+							<Entry Name="Max motor speed" Index="#x6080">
+								<Type>UDINT</Type>
+							</Entry>
+							<Entry Name="Touch probe function" Index="#x60b8">
+								<Type>UINT</Type>
+							</Entry>
+							<Entry Name="Target velocity" Index="#x60ff">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="402"/>
+					</EtherCAT>
+				</Box>
+				<EtherCAT/>
+			</Device>
+			<Device Id="2" DevType="10">
+				<Name>Device 2 (NOV-DP-RAM)</Name>
+				<AddressInfo>
+					<Io_Ccat>
+						<Address>0</Address>
+						<Size>8192</Size>
+						<CcatAccessSlot>11</CcatAccessSlot>
+						<CcatSlotAddress>268443648</CcatSlotAddress>
+						<CcatSlotParam>656386</CcatSlotParam>
+						<IoAddress>0</IoAddress>
+					</Io_Ccat>
+				</AddressInfo>
+				<Vars VarGrpType="1" InsertType="1">
+					<Name>Inputs</Name>
+				</Vars>
+				<Vars VarGrpType="2" InsertType="1">
+					<Name>Outputs</Name>
+				</Vars>
+				<Image Id="3" ImageFlags="#x00000042" AddrType="5" ImageType="5">
+					<Name>Image</Name>
+				</Image>
+				<DpRam/>
+			</Device>
+			<Device Id="3" DevType="161" AmsNetId="5.137.183.254.4.1">
+				<Name>Device 3 (CX7000)</Name>
+				<DevData>3412000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
+				<Image Id="4" AddrType="1" ImageType="3" SizeIn="2" SizeOut="10">
+					<Name>Image</Name>
+				</Image>
+			</Device>
+			<Device Id="4" DevType="11" AmsPort="28676">
+				<Name>Device 4 (COM Port)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>268435456</Address>
+						<Offset>131072</Offset>
+						<Size>512</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="5" AddrType="1" ImageType="1">
+					<Name>Image</Name>
+				</Image>
+				<Serial Baud="38400" Parity="1" StopBit="1" RsType="1" UPSDisableSysShutdown="true" WaitTimeToShutdown="60" DataSize="64" BufSize="4096" DataBit="8" FifoSize="16" Timeout="300"/>
+			</Device>
+			<Device Id="5" Disabled="true" DevType="11" AmsPort="28677">
+				<Name>Device 5 (COM Port)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>268435456</Address>
+						<Offset>196608</Offset>
+						<Size>512</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="6" AddrType="1" ImageType="1">
+					<Name>Image</Name>
+				</Image>
+				<Serial Baud="38400" Parity="1" StopBit="1" RsType="2" UPSDisableSysShutdown="true" WaitTimeToShutdown="60" BufSize="4096" DataBit="8" FifoSize="16" Timeout="300"/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500850000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^Servo Drive^Servo Drive Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Drive 5 (MDDLN55BE)">
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Digital_Inputs" VarB="Transmit PDO mapping 3^Digital inputs"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Error_Code" VarB="Transmit PDO mapping 3^Error code"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Mode_Of_Operation_Display" VarB="Transmit PDO mapping 3^Modes of operation display"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Position_Actual_Value" VarB="Transmit PDO mapping 3^Position actual value"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Statusword" VarB="Transmit PDO mapping 3^Statusword"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Torque_Actual_Value" VarB="Transmit PDO mapping 3^Torque actual value"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Touch_Porbe_Status" VarB="Transmit PDO mapping 3^Touch probe status"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Touch_Probe_Pos1_Pos_Value" VarB="Transmit PDO mapping 3^Touch probe pos1 pos value"/>
+				<Link VarA="PlcTask Inputs^MAIN.Panasonic.Velocity_Actual_Value" VarB="Transmit PDO mapping 3^Velocity actual value"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Controlword" VarB="Receive PDO mapping 3^Controlword"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Max_Torque" VarB="Receive PDO mapping 3^Max torque"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Mode_Of_Operation" VarB="Receive PDO mapping 3^Modes of operation"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Target_Position" VarB="Receive PDO mapping 3^Target position"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Target_Velocity" VarB="Receive PDO mapping 3^Target velocity"/>
+				<Link VarA="PlcTask Outputs^MAIN.Panasonic.Touch_Probe_Function" VarB="Receive PDO mapping 3^Touch probe function"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (COM Port)">
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[0]" VarB="Inputs^Data1"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[10]" VarB="Inputs^Data11"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[11]" VarB="Inputs^Data12"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[12]" VarB="Inputs^Data13"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[13]" VarB="Inputs^Data14"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[14]" VarB="Inputs^Data15"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[15]" VarB="Inputs^Data16"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[16]" VarB="Inputs^Data17"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[17]" VarB="Inputs^Data18"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[18]" VarB="Inputs^Data19"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[19]" VarB="Inputs^Data20"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[1]" VarB="Inputs^Data2"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[20]" VarB="Inputs^Data21"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[21]" VarB="Inputs^Data22"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[22]" VarB="Inputs^Data23"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[23]" VarB="Inputs^Data24"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[24]" VarB="Inputs^Data25"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[25]" VarB="Inputs^Data26"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[26]" VarB="Inputs^Data27"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[27]" VarB="Inputs^Data28"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[28]" VarB="Inputs^Data29"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[29]" VarB="Inputs^Data30"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[2]" VarB="Inputs^Data3"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[30]" VarB="Inputs^Data31"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[31]" VarB="Inputs^Data32"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[32]" VarB="Inputs^Data33"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[33]" VarB="Inputs^Data34"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[34]" VarB="Inputs^Data35"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[35]" VarB="Inputs^Data36"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[36]" VarB="Inputs^Data37"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[37]" VarB="Inputs^Data38"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[38]" VarB="Inputs^Data39"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[39]" VarB="Inputs^Data40"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[3]" VarB="Inputs^Data4"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[40]" VarB="Inputs^Data41"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[41]" VarB="Inputs^Data42"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[42]" VarB="Inputs^Data43"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[43]" VarB="Inputs^Data44"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[44]" VarB="Inputs^Data45"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[45]" VarB="Inputs^Data46"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[46]" VarB="Inputs^Data47"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[47]" VarB="Inputs^Data48"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[48]" VarB="Inputs^Data49"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[49]" VarB="Inputs^Data50"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[4]" VarB="Inputs^Data5"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[50]" VarB="Inputs^Data51"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[51]" VarB="Inputs^Data52"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[52]" VarB="Inputs^Data53"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[53]" VarB="Inputs^Data54"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[54]" VarB="Inputs^Data55"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[55]" VarB="Inputs^Data56"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[56]" VarB="Inputs^Data57"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[57]" VarB="Inputs^Data58"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[58]" VarB="Inputs^Data59"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[59]" VarB="Inputs^Data60"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[5]" VarB="Inputs^Data6"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[60]" VarB="Inputs^Data61"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[61]" VarB="Inputs^Data62"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[62]" VarB="Inputs^Data63"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[63]" VarB="Inputs^Data64"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[6]" VarB="Inputs^Data7"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[7]" VarB="Inputs^Data8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[8]" VarB="Inputs^Data9"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^D[9]" VarB="Inputs^Data10"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModBus_Slave.InData^SerStatus" VarB="Inputs^Status"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[0]" VarB="Outputs^Data1"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[10]" VarB="Outputs^Data11"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[11]" VarB="Outputs^Data12"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[12]" VarB="Outputs^Data13"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[13]" VarB="Outputs^Data14"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[14]" VarB="Outputs^Data15"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[15]" VarB="Outputs^Data16"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[16]" VarB="Outputs^Data17"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[17]" VarB="Outputs^Data18"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[18]" VarB="Outputs^Data19"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[19]" VarB="Outputs^Data20"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[1]" VarB="Outputs^Data2"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[20]" VarB="Outputs^Data21"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[21]" VarB="Outputs^Data22"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[22]" VarB="Outputs^Data23"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[23]" VarB="Outputs^Data24"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[24]" VarB="Outputs^Data25"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[25]" VarB="Outputs^Data26"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[26]" VarB="Outputs^Data27"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[27]" VarB="Outputs^Data28"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[28]" VarB="Outputs^Data29"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[29]" VarB="Outputs^Data30"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[2]" VarB="Outputs^Data3"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[30]" VarB="Outputs^Data31"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[31]" VarB="Outputs^Data32"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[32]" VarB="Outputs^Data33"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[33]" VarB="Outputs^Data34"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[34]" VarB="Outputs^Data35"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[35]" VarB="Outputs^Data36"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[36]" VarB="Outputs^Data37"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[37]" VarB="Outputs^Data38"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[38]" VarB="Outputs^Data39"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[39]" VarB="Outputs^Data40"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[3]" VarB="Outputs^Data4"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[40]" VarB="Outputs^Data41"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[41]" VarB="Outputs^Data42"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[42]" VarB="Outputs^Data43"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[43]" VarB="Outputs^Data44"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[44]" VarB="Outputs^Data45"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[45]" VarB="Outputs^Data46"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[46]" VarB="Outputs^Data47"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[47]" VarB="Outputs^Data48"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[48]" VarB="Outputs^Data49"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[49]" VarB="Outputs^Data50"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[4]" VarB="Outputs^Data5"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[50]" VarB="Outputs^Data51"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[51]" VarB="Outputs^Data52"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[52]" VarB="Outputs^Data53"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[53]" VarB="Outputs^Data54"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[54]" VarB="Outputs^Data55"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[55]" VarB="Outputs^Data56"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[56]" VarB="Outputs^Data57"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[57]" VarB="Outputs^Data58"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[58]" VarB="Outputs^Data59"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[59]" VarB="Outputs^Data60"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[5]" VarB="Outputs^Data6"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[60]" VarB="Outputs^Data61"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[61]" VarB="Outputs^Data62"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[62]" VarB="Outputs^Data63"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[63]" VarB="Outputs^Data64"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[6]" VarB="Outputs^Data7"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[7]" VarB="Outputs^Data8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[8]" VarB="Outputs^Data9"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^D[9]" VarB="Outputs^Data10"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModBus_Slave.OutData^SerCtrl" VarB="Outputs^Ctrl"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>

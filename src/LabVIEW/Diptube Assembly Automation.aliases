@@ -1,0 +1,5 @@
+[My Computer]
+My Computer = "192.168.1.35"
+
+[NI-cRIO-9063-SILGAN]
+NI-cRIO-9063-SILGAN = "172.22.11.2"
